@@ -32,18 +32,12 @@ function M.setup(opts)
 
   vim.api.nvim_create_user_command("WordCount", function()
     local count = M.count_words()
-    if M.config.notify then
-      vim.notify("Word count: " .. count)
-    end
-    print("Word count: " .. count)
+    vim.notify("Word count: " .. count)
   end, {})
 
   vim.api.nvim_create_user_command("WordCountLine", function()
     local count = M.count_words_line()
-    if M.config.notify then
-      vim.notify("Words on this line: " .. count)
-    end
-    print("Words on this line: " .. count)
+    vim.notify("Words on this line: " .. count)
   end, {})
 end
 
