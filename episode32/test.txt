@@ -1,0 +1,5 @@
+This is a sample text file for testing the word count plugin.
+It has multiple lines with different numbers of words.
+Short line.
+This line has exactly seven words in it.
+The quick brown fox jumps over the lazy dog.
